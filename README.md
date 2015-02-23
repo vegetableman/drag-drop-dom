@@ -6,7 +6,7 @@ A simplified api for adding drag-drop functionality to dom nodes by specifying d
 
 ```js
 
-var ddd = require('../')({drag: '.drag', drop: '.drop'})
+var ddd = require('drag-drop-dom')({drag: '.drag', drop: '.drop'})
 
 ddd.on('enter', function(node, target) {
     target.classList.add('highlight');
