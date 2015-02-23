@@ -1,13 +1,13 @@
 {
   "name": "drag-drop-dom",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "A drag drop utilty for dom nodes using native html api",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "example": "beefy example/browser.js:bundle.js --index example/index.html"
   },
-  "author": "",
+  "author": "vegetableman",
   "license": "ISC",
   "dependencies": {
     "attach-dom-events": "^1.0.0",
