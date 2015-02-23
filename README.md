@@ -1,4 +1,4 @@
-#Drag-Drop-Dom
+# Drag-Drop-Dom
 
 A simplified api for adding drag-drop functionality to dom nodes by specifying drag and drop targets.
 
@@ -42,3 +42,7 @@ Events:
  -  `ddd.on('drop', listener)` 
 
 Each listener for the events except ```start``` event has two parameters: ```node``` and ```target```. ```node``` is the current node being dragged and ```target``` is the current drop target.
+
+# license
+
+MIT
