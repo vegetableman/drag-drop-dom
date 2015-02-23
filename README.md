@@ -28,18 +28,17 @@ ddd.on('drop', function(node, target) {
 require('drag-drop-dom')({options})
 ```
 
-options:
+Options:
 
  - `drag` Node to drag (selector | node)
  - `drop` Target node to drop on (selector | node)
  - `once` Target node should support drop only once (true | false, default: true)
 
-
- events:
+Events:
 
  -  `ddd.on('start', listener)` 
  -  `ddd.on('enter', listener)` 
  -  `ddd.on('leave', listener)` 
  -  `ddd.on('drop', listener)` 
 
- Each listener has two parameters: ```node``` and ```target```. ```node``` is the current node being dragged and ```target``` is the current drop target.
+Each listener has two parameters: ```node``` and ```target```. ```node``` is the current node being dragged and ```target``` is the current drop target.
