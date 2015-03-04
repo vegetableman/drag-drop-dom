@@ -1,6 +1,6 @@
 {
   "name": "drag-drop-dom",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A drag drop utilty for dom nodes using native html api",
   "main": "index.js",
   "scripts": {
@@ -8,6 +8,11 @@
     "example": "beefy example/browser.js:bundle.js --index example/index.html"
   },
   "author": "vegetableman",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vegetableman/drag-drop-dom.git"
+  },
+  "homepage": "https://github.com/vegetableman/drag-drop-dom",
   "license": "ISC",
   "dependencies": {
     "attach-dom-events": "^1.0.0",
@@ -21,5 +26,10 @@
   },
   "devDependencies": {
     "beefy": "^2.1.3"
-  }
+  },
+  "keywords": [
+    "drag",
+    "drop",
+    "dom"
+  ]
 }
