@@ -42,7 +42,3 @@ Events:
  -  `ddd.on('drop', listener)` 
 
 Each listener for the events except ```start``` event has two parameters: ```node``` and ```target```. ```node``` is the current node being dragged and ```target``` is the current drop target.
-
-# license
-
-MIT
