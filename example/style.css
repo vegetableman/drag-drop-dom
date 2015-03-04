@@ -1,9 +1,19 @@
+/*
+*/
 [draggable] {
   user-select: none;
   -moz-user-select: none;
   -khtml-user-select: none;
   -webkit-user-select: none;
-  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+[droppable] {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
   -khtml-user-drag: element;
   -webkit-user-drag: element;
 }

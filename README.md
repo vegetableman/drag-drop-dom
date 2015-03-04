@@ -32,7 +32,7 @@ Options:
 
  - `drag` Node to drag (selector | node)
  - `drop` Target node to drop on (selector | node)
- - `once` Target node should support drop only once (true | false, default: true)
+ - `once` Target node should support drop only once (true | false, default: false)
 
 Events:
 

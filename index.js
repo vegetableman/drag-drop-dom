@@ -5,6 +5,7 @@ var inherits = require('inherits');
 var attachEvents = require('attach-dom-events')
 var domToString = require('dom-to-string');
 var domify = require('domify');
+var falsey = require('falsey');
 
 function DragDropDom(opt) {
     if(!(this instanceof DragDropDom)) return new DragDropDom(opt);
@@ -15,7 +16,7 @@ function DragDropDom(opt) {
 
     this.opt = opt;
     this.opt.cursor = this.opt.cursor || 'move';
-    this.opt.once = this.opt.once || true;
+    this.opt.once = this.opt.once || false;
 
     this.dragNodes = $(this.opt.drag);
     this.dropNodes = $(this.opt.drop);
@@ -49,7 +50,8 @@ DragDropDom.prototype.handleDragStart = function(e) {
 };
 
 DragDropDom.prototype.handleDragEnter = function(e) {
-    if (!e.target.getAttribute('once') && e.target.matches(this.opt.drop))
+    if (falsey(e.target.getAttribute('once'))
+            && e.target.matches(this.opt.drop))
         this.emit('enter', this.dragNode, e.target);
 };
 
@@ -69,7 +71,7 @@ DragDropDom.prototype.handleDragLeave = function(e) {
 DragDropDom.prototype.handleDrop = function(e) {
     if (this.dropTarget.matches(this.opt.drop)
         && !this.dragNode.isEqualNode(this.dropTarget)
-        && !this.dropTarget.getAttribute('once'))
+        && falsey(this.dropTarget.getAttribute('once')))
     {
         this.dropTarget.setAttribute('once', this.opt.once);
         this.emit('drop', domify(e.dataTransfer.getData('text/html')), this.dropTarget);

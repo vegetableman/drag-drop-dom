@@ -14,9 +14,10 @@
     "dom-to-string": "^1.0.0",
     "domify": "^1.3.1",
     "events": "^1.0.2",
+    "falsey": "^0.1.0",
     "inherits": "^2.0.1",
-    "to-array": "^0.1.4",
-    "queryselectorall": "^0.1.0"
+    "queryselectorall": "^0.1.0",
+    "to-array": "^0.1.4"
   },
   "devDependencies": {
     "beefy": "^2.1.3"
