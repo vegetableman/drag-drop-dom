@@ -1,6 +1,6 @@
 {
   "name": "drag-drop-dom",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A drag drop utilty for dom nodes using native html api",
   "main": "index.js",
   "scripts": {
