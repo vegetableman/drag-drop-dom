@@ -2,6 +2,8 @@
 
 A simplified api for adding drag-drop functionality to dom nodes by specifying drag and drop targets.
 
+![img](https://raw.githubusercontent.com/vegetableman/drag-drop-dom/master/example.gif)
+
 ##Example
 
 ```js
